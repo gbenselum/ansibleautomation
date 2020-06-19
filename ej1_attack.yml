@@ -1,5 +1,5 @@
 ---
-- hosts: Linux
+- hosts: all
   become: true  
   tasks:
   - name: Se creara un usuario toxico en todos los hosts con uid 1040
