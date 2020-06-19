@@ -6,7 +6,7 @@
 
   tasks:
 
-  - name: "playbook para mesa de ayuda con variables para Survey en Ansible Tower
+  - name: playbook para mesa de ayuda con variables para Survey en Ansible Tower
     yum:
       name:  "{{ paquete }}"
       state: "{{ accion }}"
