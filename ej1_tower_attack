@@ -1,0 +1,10 @@
+---
+- hosts: Linux
+  become: true  
+  tasks:
+  - name: Se creara un usuario toxico en todos los hosts con uid 1040
+    user:
+      name: toxico
+      comment: el usuario toxico ha vuelto por mas
+      group: wheel
+      uid: 1040
