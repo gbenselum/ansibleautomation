@@ -1,0 +1,12 @@
+---
+- name: Tarea para help desk para manejo de paquetes linux
+  hosts: all
+  become: true
+  gather_facts: no
+
+  tasks:
+
+  - name: "playbook para mesa de ayuda con variables para Survey en Ansible Tower
+    yum:
+      name:  "{{ paquete }}"
+      state: "{{ accion }}"
