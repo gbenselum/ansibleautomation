@@ -7,26 +7,10 @@
       name: httpd
       state: present
 
-  #- name: permitir trafico www en firewalld
-  #  firewalld:
-  #    service: http
-  #    permanent: yes
-  #    state: enabled
-  #    
-  #- name: reiniciar firewalld para tomar reglas
-  #  service:
-  #    name: firewalld
-  #    state: restarted
-   
+
   - name: iniciar servicio httpd 
     service:
       name: httpd
       state: started
-   
-- hosts: web
-  gather_facts: no
-  tasks:
-      - name: prueba webserver
-        uri:
-            url: http://localhost   
+
 ...
