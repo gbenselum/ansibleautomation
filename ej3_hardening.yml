@@ -24,21 +24,6 @@
       name: gcc
       state: absent
 
-- hosts:all
-  gather_facts:no
-    tasks:
-    - name: apagar al dios crono
-        command: echo ALL >>/etc/cron.deny
-
-
-
-
-
-
-
-
-
-echo ALL >>/etc/cron.deny
 
 
 ...
