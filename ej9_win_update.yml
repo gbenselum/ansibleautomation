@@ -1,5 +1,5 @@
     ---
-    - hosts: windows
+    - hosts: student1-win1
       name: This is my Windows patching playbook
       tasks:
         - name: Install Windows Updates
