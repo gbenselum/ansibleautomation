@@ -3,7 +3,7 @@
   become: true  
   tasks:
   - name: Ejercicio1
-    tower_job_template:
+    awx.awx.tower_job_template:
       name: "ej1"
       job_type: "run"
       organization: "Default"
