@@ -3,7 +3,7 @@
   tasks:
   - name: Eliminar usuario {{ user_delete }}
     user:
-      name: "{{ user_delete }}"
+      name: ""{{ user_delete | default('toxico') }}"
       state: absent
       remove: yes
 ...
