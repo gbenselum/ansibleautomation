@@ -2,9 +2,9 @@
 - hosts: all
   become: true  
   tasks:
-  - name: Se creara un usuario toxico en todos los hosts con uid 1040
+  - name: Se creara un usuario segun variable o toxico en caso de no completar la variable
     user:
-      name: toxico
+      name: "{{ user_input | default('toxico')  }}" 
       comment: el usuario toxico ha vuelto por mas
       group: wheel
       uid: 1040
